@@ -6,6 +6,7 @@
     <title>Website Portofolio</title>
     <link rel="stylesheet" href="index.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
 </head>
 <body>
     <!-- navbar -->
@@ -47,7 +48,7 @@
      </div>
 
      <!-- home -->
-      <div class="home">
+      <div class="home" data-aos="fade-right">
             <div class="home-info">
                 <p class="greeting">
                     Hi I am 
@@ -64,18 +65,20 @@
                 <p class="keterangan">
                     I'm a Software Developer passionate about coding and problem-solving, focused on creating scalable and user-friendly solutions. My skills include HTML, CSS, JavaScript, Python, PHP, SQL, Laravel, NextJs, React, and MongoDB.
                 </p>
-                <div class="hire-me">
-                    Hire Me
-                </div>
+                <a href="https://wa.me/+62881038194017" target="_blank">
+                    <div class="hire-me">
+                        Hire Me
+                    </div>
+                </a>
             </div>
 
-            <div class="home-img-wrapper">
+            <div class="home-img-wrapper" >
                 <div class="home-img">
                     <img src="assets/Foto_terbaru-removebg-preview.png" alt="Foto Profil">
                 </div>
         
                 <!-- Label Teknologi dengan Ikon -->
-                <div class="label label-1">
+                <div class="label label-1" >
                     <img src="https://cdn.simpleicons.org/nextdotjs/black" alt="NextJS Icon" class="icon-tool">
                     NextJS
                 </div>
@@ -109,11 +112,11 @@
 
       <!-- start about -->
       <div class="container-about">
-        <div class="about-img">
+        <div class="about-img"  data-aos="fade-right">
             <img src="assets/Foto_terbaru-removebg-preview.png" alt="">
         </div>
     
-        <div class="about-deskripsi">
+        <div class="about-deskripsi"  data-aos="fade-left">
             <p class="about-heading">
                 About Me 
             </p>
@@ -153,7 +156,7 @@
 
     <!-- Services -->
      <div class="container-service">
-        <div class="deskripsi-service">
+        <div class="deskripsi-service" data-aos="fade-right">
             <p class="heading-service">
                 Services
             </p>
@@ -161,7 +164,7 @@
                 Lorem ipsum dolor sit amet consectetur. Tristique amet sed massa nibh lectus netus in. Aliquet donec morbi convallis pretium
             </p>
         </div>
-        <div class="container-card">
+        <div class="container-card" data-aos="fade-up">
             <div class="card">
                 <img src="assets/icon-ui-ux.png" alt="" width="70px" height="70px">
                 <p class="heading-service">
@@ -203,7 +206,7 @@
 
      <!-- my project -->
       <div class="container-project">
-            <div class="deskripsi-project">
+            <div class="deskripsi-project" data-aos="fade-up">
                 <p class="heading-project">
                     My Project
                 </p>
@@ -211,7 +214,7 @@
                     Lorem ipsum dolor sit amet consectetur. Mollis erat duis aliquam mauris est risus lectus. Phasellus consequat urna tellus
                 </p>
             </div>
-            <div class="container-bread-crump">
+            <div class="container-bread-crump" data-aos="fade-right">
                 <div class="bread-crump">
                     UI/UX
                 </div>
@@ -225,7 +228,7 @@
                     Graphic Design
                 </div>
             </div>
-            <div class="container-card">
+            <div class="container-card" data-aos="fade-right">
                 <div class="wrapper-card">
                     <div class="card-project">
                         <img src="assets/project-1.png" alt="">                    
@@ -263,7 +266,7 @@
       </div>
 
       <!-- start news letter -->
-       <div class="container-news-letter">
+       <div class="container-news-letter" data-aos="fade-up">
             <div class="wrapper-news-letter">
                 <div class="deskripsi">
                     <p class="heading">
@@ -398,5 +401,18 @@
                 </div>
             </div>
         </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+    <!-- Inisialisasi AOS -->
+    <script>
+        AOS.init({
+            offset: 120,  // jarak mulai animasi
+            delay: 0,     // penundaan animasi
+            duration: 1500, // durasi animasi
+            easing: 'ease', // tipe easing
+            // once: true,   // animasi hanya berjalan sekali
+        });
+    </script>
 </body>
 </html>
