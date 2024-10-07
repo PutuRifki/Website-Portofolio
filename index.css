@@ -2,6 +2,9 @@
     padding: 0;
     margin: 0;
 }
+html{
+    scroll-behavior: smooth;
+}
 body{
     font-family: 'Poppins', sans-serif;
     padding-top: 20px;
@@ -29,7 +32,11 @@ body{
     gap: 56px;
 }
 
-.container-navbar .nav .button-nav{
+.container-navbar .nav a{
+    text-decoration: none;
+}
+
+.container-navbar .nav a .button-nav{
     padding: 20px;
     border-radius: 60px;
     padding-inline: 30px;
@@ -52,8 +59,6 @@ body{
     justify-content: space-between;
     margin-top: 40px;
     padding-inline: 96px;
-    overflow-y: hidden;
-    overflow-x: hidden;
 }
 
 .home .home-info{
@@ -373,8 +378,8 @@ body{
     display: flex;
     flex-direction: column;
     gap: 10px;
-    justify-content: start;
-    align-items: start;
+    justify-content: center;
+    align-items: center;
     background-color: #F8F8F8;
     border-radius: 14px;
     padding-inline: 30px;
@@ -388,12 +393,13 @@ body{
     font-size: 32px;
     letter-spacing: 0.03em;
     color: #000000;
+    text-align: center;
 }
 .container-service .container-card .card .paragraf-service{
     font-size: 19px;
     letter-spacing: 0.03em;
     color: rgba(0, 0, 0, 0.6);
-    text-align: justify;
+    text-align: center;
 }
 
 .container-project{
@@ -649,10 +655,19 @@ body{
     gap: 20px;
 }
 
-.container-footer .footer-contain .wrapper-footer .quick-links .link p{
+.container-footer .footer-contain .wrapper-footer .quick-links .link a{
+    text-decoration: none;
+}
+
+.container-footer .footer-contain .wrapper-footer .quick-links .link a p{
     font-size: 16px;
     letter-spacing: -0.015em;
     color: #FCFCFD;
+}
+
+.container-footer .footer-contain .wrapper-footer .quick-links .link a p:hover{
+    text-decoration: underline;
+    transition: 2s ease-in-out;
 }
 
 .container-footer .footer-contain .border{
