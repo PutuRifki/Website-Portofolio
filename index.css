@@ -19,6 +19,24 @@ body{
     margin-inline: 96px;
 }
 
+.hamburger {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 24px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.hamburger span {
+    display: block;
+    height: 3px;
+    background-color: white;
+    border-radius: 2px;
+    width: 100%;
+}
+
 .container-navbar .icon{
     display: flex;
     justify-content: center;
@@ -686,4 +704,39 @@ body{
     font-size: 20px;
     letter-spacing: -0.015em;
     color: #FFFFFF;
+}
+
+
+/* rensponsive */
+/* Styling dropdown di layar kecil */
+@media (max-width: 768px) {
+    .container-navbar {
+        flex-direction: row;
+        align-items: center;
+        margin-inline: 20px;
+        padding: 20px;
+        width: 100%;
+    }
+
+    .container-navbar .nav {
+        display: none;
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .container-navbar .icon {
+        margin-bottom: 20px;
+    }
+
+    /* Menampilkan hamburger pada layar kecil */
+    .hamburger {
+        display: flex;
+    }
+
+    /* Menampilkan navbar saat hamburger diklik */
+    .nav.active {
+        display: flex;
+    }
 }
